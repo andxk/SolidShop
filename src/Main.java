@@ -15,6 +15,7 @@ public class Main {
 
 
     public static void shopFilling(Shop shop) {
+        //Liskov substitution principle - наследники класса Product полностью играют роль предка
         shop.addProduct(new Milk("Молоко 1л", 100, "ВоронежМолоко", 1000), 5);
         shop.addProduct(new Bread("Хлеб белый", 40, "Хлебозавод №3", 600), 10);
         shop.addProduct(new Bread("Хлеб черный", 45, "Хлебозавод №1", 700), 15);
@@ -24,6 +25,7 @@ public class Main {
     }
 
 
+    //принцип DRY - повторяющийся запрос ввода из консоли переносим в отдельный метод
     public static List<Integer> userAnswer(String query) {
         Scanner sc = new Scanner(System.in);
         System.out.println();

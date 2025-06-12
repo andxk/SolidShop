@@ -1,6 +1,8 @@
 package products;
 
 public class TV extends Product implements IIndustrialGoods, IScreenable {
+    // Open Closed Principle - имплементируя эти интерфейсы мы добавляем
+    //   классу новые свойства, такие как "Гарантия" и "Диагональ экрана" не изменяя его код
     private int warranty;
     private double screenSize;
 

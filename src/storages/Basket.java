@@ -4,6 +4,7 @@ import products.Product;
 import java.util.List;
 
 public class Basket extends ProductStorage {
+    // Magic Numbers Principle - используем константы вместо чисел
     protected static final int MIN_SHIPPING_COST = 100; // минимальная стоимость доставки
     protected static final int RUB_KM_COST = 30; // стоимость доставки за километр
 

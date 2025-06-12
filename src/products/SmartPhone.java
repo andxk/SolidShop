@@ -1,6 +1,8 @@
 package products;
 
 public class SmartPhone extends Product implements IIndustrialGoods, IScreenable, IMobile, IWeighted {
+    // Interface Segregation Principle - имплементируем несколько простых интерфейсов вместо одного сложного
+    // Dependency Inversion Principle - разделив интерфейсы мы не зависим от их общей функциональности
     private int warranty;
     private int rom;
     private int ram;
